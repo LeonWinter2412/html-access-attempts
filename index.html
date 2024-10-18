@@ -3,28 +3,31 @@
 
 <head>
     <title>Zutrittsversuche - Autohaus Nettmann</title>
+    <link href="./css/netmann.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="./access-attempts.html">Zutrittsversuche</a>
-            </li>
-            <li>
-                <a href="./employees.html">Mitarbeitende</a>
-            </li>
-            <li>
-                <a href="./rental-car.html">Mietwagen</a>
-            </li>
-        </ul>
-    </nav>
-    <main>
+    <div class="navWrapper">
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="./access-attempts.html">Zutrittsversuche</a>
+                </li>
+                <li>
+                    <a href="./employees.html">Mitarbeitende</a>
+                </li>
+                <li>
+                    <a href="./rental-car.html">Mietwagen</a>
+                </li>
+            </ul>
+        </nav>
         <img alt="Nettmann Logo" src="./logo_nettmann.png" width="200" />
-        <h1>Zutrittsversuche</h1>
+    </div>
+    <main>
+        <h1 class="headline">Zutrittsversuche</h1>
         <!-- Outdated "border" is used, because CSS is not allowed in this 
         practice -->
-        <table border="1">
+        <table class="table">
             <tr>
                 <th>ID</th>
                 <th>Uhrzeit</th>
@@ -39,7 +42,7 @@
                 <td>3</td>
                 <td>Schmidt</td>
                 <td>Eingang Lager</td>
-                <td>Zutritt abgelehnt</td>
+                <td class="rejected">Zutritt abgelehnt</td>
             </tr>
             <tr>
                 <td>100</td>
@@ -47,7 +50,7 @@
                 <td>3</td>
                 <td>Schmidt</td>
                 <td>Eingang Lager</td>
-                <td>Zutritt abgelehnt</td>
+                <td class="rejected">Zutritt abgelehnt</td>
             </tr>
             <tr>
                 <td>101</td>
@@ -55,25 +58,29 @@
                 <td>1</td>
                 <td>Nettmann</td>
                 <td>Eingang Büro</td>
-                <td>Zutritt gestattet</td>
+                <td class="accepted">Zutritt gestattet</td>
             </tr>
         </table>
         <p>Es ist zu beachten das sich das RFID System noch in der Test-Phase befindet</p>
     </main>
-    <footer>
-        <hr>
-        <h2>Kontakt</h2>
-        <ul>
-            <li>Ottostraße 22, 90762 Fürth</li>
-            <li>0911/11...</li>
-            <li>info@authohaus-nettmann.de</li>
-        </ul>
-        <h2>Bankdaten</h2>
-        <ul>
-            <li>IBAN: DE76 1231...</li>
-            <li>BIC: 123...</li>
-            <li>Institut: SuperBank</li>
-        </ul>
+    <hr class="divider" />
+    <footer class="bottom-footer">
+        <div>
+            <h2>Kontakt</h2>
+            <ul>
+                <li>Ottostraße 22, 90762 Fürth</li>
+                <li>0911/11...</li>
+                <li>info@authohaus-nettmann.de</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Bankdaten</h2>
+            <ul>
+                <li>IBAN: DE76 1231...</li>
+                <li>BIC: 123...</li>
+                <li>Institut: SuperBank</li>
+            </ul>
+        </div>
     </footer>
 </body>
 
